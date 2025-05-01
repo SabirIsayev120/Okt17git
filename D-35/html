@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Teqləri Nümunələri</title>
+</head>
+
+<body>
+
+    <p><abbr title="World Health Organization">WHO</abbr> beynəlxalq səhiyyə təşkilatıdır.</p>
+
+    <blockquote cite="https://example.com">
+        "Elm insanları aydınlığa aparan bir işıqdır."
+    </blockquote>
+
+    <p>Newton demişdir: <q>Hər hərəkətə qarşı bərabər və əks reaksiya var.</q></p>
+
+    <p><cite>Don Kixot</cite> Miquel de Servantes tərəfindən yazılmış məşhur bir romandır.</p>
+    <p><bdo dir="rtl">Bu mətn sağdan sola yazılmışdır.</bdo></p>
+
+    <p>Ətraflı məlumat üçün <a href="https://www.example.com" target="_blank">bu linkə</a> daxil olun.</p>
+    <p>"Linqdəki cümlənin tərcüməsi"Bu domen sənədlərdə illüstrativ nümunələrdə istifadə üçündür. Bu domendən
+        ədəbiyyatda əvvəlcədən razılaşdırmadan və ya icazə istəmədən istifadə edə bilərsiniz.</p>
+
+</body>
+
+</html>

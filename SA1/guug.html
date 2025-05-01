@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Restaurant Tycoon</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+        #game-info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        .button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-info">Qazanc: $0</div>
+    <button class="button" id="hireButton">Yeni İşçi Qəbul Et - $50</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        let scene, camera, renderer, clock, gameInfo;
+        let restaurant, player, customers = [];
+        let revenue = 0, hiredStaff = 0, staffCost = 50;
+        let hired = false;
+
+        // Setup scene and camera
+        function init() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            // Create floor (restaurant base)
+            const floorGeometry = new THREE.BoxGeometry(20, 0.1, 20);
+            const floorMaterial = new THREE.MeshBasicMaterial({ color: 0x8B4513 });
+            restaurant = new THREE.Mesh(floorGeometry, floorMaterial);
+            scene.add(restaurant);
+
+            // Add tables (simple cubes)
+            for (let i = 0; i < 3; i++) {
+                let table = new THREE.Mesh(new THREE.BoxGeometry(2, 0.1, 2), new THREE.MeshBasicMaterial({ color: 0xFFFF00 }));
+                table.position.set(Math.random() * 8 - 4, 0.1, Math.random() * 8 - 4);
+                scene.add(table);
+            }
+
+            // Add basic customers (spheres for simplicity)
+            for (let i = 0; i < 3; i++) {
+                let customer = new THREE.Mesh(new THREE.SphereGeometry(0.2), new THREE.MeshBasicMaterial({ color: 0x00FF00 }));
+                customer.position.set(Math.random() * 8 - 4, 0.2, Math.random() * 8 - 4);
+                customers.push(customer);
+                scene.add(customer);
+            }
+
+            camera.position.z = 10;
+            clock = new THREE.Clock();
+            gameInfo = document.getElementById("game-info");
+
+            animate();
+        }
+
+        // Update the game state and render
+        function animate() {
+            requestAnimationFrame(animate);
+            const deltaTime = clock.getDelta();
+
+            // Update customer movement (for simplicity)
+            customers.forEach(customer => {
+                customer.position.x += Math.sin(customer.position.z) * deltaTime;
+                customer.position.z += Math.cos(customer.position.x) * deltaTime;
+            });
+
+            // Rendering
+            renderer.render(scene, camera);
+            updateGameInfo();
+        }
+
+        // Update game information (revenue)
+        function updateGameInfo() {
+            revenue += 0.1 + (hiredStaff * 0.05);  // Increment revenue based on staff
+            gameInfo.innerText = `Qazanc: $${Math.round(revenue)} | İşçilər: ${hiredStaff}`;
+        }
+
+        // Hire a new staff member
+        function hireStaff() {
+            if (revenue >= staffCost) {
+                hiredStaff++;
+                revenue -= staffCost;
+                alert('Yeni işçi qəbul edildi!');
+            } else {
+                alert('Yeterli pulunuz yoxdur!');
+            }
+        }
+
+        // Initialize game
+        init();
+
+        // Hire staff button
+        document.getElementById("hireButton").addEventListener("click", hireStaff);
+
+        // Resize event for canvas
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satış Saytı</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background-color: #333; color: white; padding: 15px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .container { padding: 20px; }
+        .product { border: 1px solid #ddd; padding: 15px; margin: 10px; display: inline-block; }
+        footer { background-color: #333; color: white; padding: 10px; position: absolute; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Satış Saytı</h1>
+        <nav>
+            <a href="#">Ana Səhifə</a>
+            <a href="#products">Məhsullar</a>
+            <a href="#contact">Əlaqə</a>
+        </nav>
+    </header>
+    
+    <div class="container" id="products">
+        <h2>Məhsullar</h2>
+        <div class="product">
+            <h3>Məhsul 1</h3>
+            <p>Qiymət: 100 AZN</p>
+            <button>Al</button>
+        </div>
+        <div class="product">
+            <h3>Məhsul 2</h3>
+            <p>Qiymət: 150 AZN</p>
+            <button>Al</button>
+        </div>
+    </div>
+    
+    <div class="container" id="contact">
+        <h2>Əlaqə</h2>
+        <p>Email: example@mail.com</p>
+        <p>Telefon: +994 50 123 45 67</p>
+    </div>
+    
+    <footer>
+        &copy; 2025 Satış Saytı. Bütün hüquqlar qorunur.
+    </footer>
+    salam
+</body>
+</html>

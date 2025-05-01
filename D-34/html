@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Format və Sitat Elementləri</title>
+</head>
+<body>
+
+    <h2>Format Elementləri</h2>
+    <p><b>Bu qalın mətn</b> və <strong>bu isə vurğulanan mətn</strong>dir.</p>
+    <p><i>Bu kursiv mətn</i> və <em>bu isə vurğulanan kursiv mətn</em>dir.</p>
+    <p><mark>Bu işarələnmiş mətn</mark>dir.</p>
+    <p><del>Bu silinmiş mətn</del> və <ins>bu isə əlavə olunmuş mətn</ins>dir.</p>
+    <p>X<sub>2</sub> və X<sup>2</sup> nümunə kimi.</p>
+
+    <h2>Sitat Elementləri</h2>
+    <blockquote>
+        "Bu uzun sitat nümunəsidir."
+    </blockquote>
+    <p><q>Bu isə qısa sitat nümunəsidir.</q></p>
+    <p><abbr title="World Health Organization">WHO</abbr> qısaltması.</p>
+    <address>
+        Bizimlə əlaqə: <br>
+        Bakı, Azərbaycan <br>
+        Email: example@mail.com
+    </address>
+    <p><cite>HTML və CSS Kitabı</cite> veb di  zayn öyrənmək üçün yaxşı mənbədir.</p>
+    <p><bdo dir="rtl">Bu mətn sağdan sola yazılıb.</bdo></p>
+
+</body>
+</html>
