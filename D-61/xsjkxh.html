@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complex Flexbox Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: purple;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color:white
+    }
+
+    .box {
+      background-color: cyan;
+      padding: 15px;
+      margin: 10px;
+      flex: 1;
+    }
+
+    .box h2 {
+      font-weight: bold;
+    }
+
+    .right-box {
+      background-color: white;
+      padding: 15px;
+      margin: 10px;
+      flex: 1.5;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .buttons button {
+      padding: 5px 10px;
+      background-color: #e0e0e0;
+      border: none;
+      cursor: pointer;
+    }
+
+    .buttons .blush {
+      flex-basis: 100%;
+      background-color: pink;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>Complex flexbox example</header>
+  <div class="container">
+    <div class="box">
+      <h2>First article</h2>
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack. Portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry plaid messenger microdosing organic coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+    </div>
+    <div class="box">
+      <h2>Second article</h2>
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack. Portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry plaid messenger microdosing organic coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+    </div>
+    <div class="right-box">
+      <div class="buttons">
+        <button>Smile</button>
+        <button>Laugh</button>
+        <button>Wink</button>
+        <button>Shrug</button>
+        <button class="blush">Blush</button>
+      </div>
+      <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack. Portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry plaid messenger microdosing organic coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      <p>Cray food truck brunch, XOXO 1 k-effiyah pickled chicharrones activated enamel. Organic small batch echo locust, letterpress succulents. Disrupt direct trade blue bottle chillwave jean shorts kale chips subway tile. Gluten-free ethical bicycle rights ugh pickled scenester squid chartreuse put a bird on it. Listicle pickled man bun cornicle heirloom art party.</p>
+    </div>
+  </div>
+</body>
+</html>

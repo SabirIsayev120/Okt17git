@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            margin: 20px auto;
+            border: 2px solid #333;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-size: 24px;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"],
+        select {
+            width: 95%;
+            padding: 5px;
+        }
+        .center-button {
+            text-align: center;
+            padding: 10px;
+        }
+        input[type="submit"] {
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th colspan="2">CV</th>
+            </tr>
+            <tr>
+                <td>Ad:</td>
+                <td><input type="text" placeholder="Ad daxil edin..."></td>
+            </tr>
+            <tr>
+                <td>Soyad:</td>
+                <td><input type="text" placeholder="Soyad daxil edin..."></td>
+            </tr>
+            <tr>
+                <td>Unvan:</td>
+                <td><input type="text" placeholder="Unvan daxil edin..."></td>
+            </tr>
+            <tr>
+                <td>Doğum tarixi:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Elektron ünvan:</td>
+                <td><input type="email" placeholder="example@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Yaş:</td>
+                <td><input type="text" placeholder="Yaşınızı daxil edin..."></td>
+            </tr>
+            <tr>
+                <td>Xüsusi şifrə:</td>
+                <td><input type="password" placeholder="Şifrənizi daxil edin..."></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    Kişi <input type="radio" name="gender" value="Kisi">
+                    Qadın <input type="radio" name="gender" value="Qadin">
+                    Digər <input type="radio" name="gender" value="Diger">
+                </td>
+            </tr>
+            <tr>
+                <td>Milliyyət:</td>
+                <td>
+                    <select>
+                        <option value="Azerbaycan">Azərbaycan</option>
+                        <option value="Turk">Türk</option>
+                         <option value="Rus">Rus</option>
+                        <option value="Diger">Digər</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bacarıqlar:</td>
+                <td>
+                    <label><input type="checkbox"> Java SE</label>
+                    <label><input type="checkbox"> Java EE</label>
+                    <label><input type="checkbox"> Java FX</label>
+                    <label><input type="checkbox"> Java ME</label>
+                    <label><input type="checkbox"> HTML</label>
+                    <label><input type="checkbox"> CSS</label><br>
+                    <label><input type="checkbox"> JavaScript</label>
+                    <label><input type="checkbox"> Bootstrap</label>
+                    <label><input type="checkbox"> Jquery</label>
+                    <label><input type="checkbox"> Scene Builder</label>
+                    <label><input type="checkbox"> Spring</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center-button">
+                    <input type="submit" value="Yadda saxla">
+                    <input type="color"id = colorinput>
+                 </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+    
+    </script>
+</body>
+</html

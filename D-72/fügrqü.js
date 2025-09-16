@@ -1,0 +1,4 @@
+let səbət;
+
+
+səbət = "dcdcdvdvdvdvdvdvdvdvdvdvdvdvdvdvdvdcdcdvdvdvdvdvdvdvdvdvdvdvdvdvdvdvdcdcdvdvdvdvdvdvdvdvdvdvdvdvdvdvdv"

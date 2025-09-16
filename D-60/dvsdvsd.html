@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YourEvent Registration</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #28a745;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-container {
+      width: 400px;
+      background-color: #f0fff4;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .dob-selects {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .dob-selects select {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏅 YourEvent</h1>
+
+  <div class="form-container">
+    <h2>Online Registration</h2>
+    
+    <form>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" placeholder="First Name">
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" placeholder="Last Name">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Email Address">
+
+      <label for="company">Company (if applicable)</label>
+      <input type="text" id="company" placeholder="Company">
+
+      <label for="address">Physical Address</label>
+      <input type="text" id="address" placeholder="Physical Address">
+
+      <label for="dob">Date of Birth</label>
+      <div class="dob-selects">
+        <select>
+          <option>Month</option>
+        </select>
+        <select>
+          <option>Day</option>
+        </select>
+        <select>
+          <option>Year</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

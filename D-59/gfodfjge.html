@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Məlumat Toplama Formu</title>
+<style>
+    label{
+        border: 10ch;
+        color: white;
+      
+
+    }
+table{
+    background-color: grey;
+}
+</style>
+</head>
+
+<body>
+  <form>
+    <table>
+    <tr>
+       <td>
+           <label for="ad">Ad:</label>
+       </td>
+       <td>
+           <input type="text" id="ad" name="ad" required maxlength="20"><br><br>
+       </td>
+    </tr>
+<tr>
+   <td>
+       <label for="sifre">Şifrə:</label>
+   </td>
+   <td>
+       <input type="password" id="sifre" name="sifre" required minlength="5"><br><br>
+   </td>
+</tr>
+<tr>
+   <td>
+       <label for="email">Email:</label>
+   </td> 
+   <td>
+       <input type="email" id="email" name="email" required placeholder="mtnur@example.com"><br><br>
+   </td> 
+</tr>
+<tr>
+    <td>
+        <label for="telefon">Telefon:</label>
+
+    </td>
+  <td>
+
+      <input type="tel" id="telefon" name="telefon">
+</td>
+
+
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+           placeholder="050-123-4567"><br><br>
+</tr>
+
+    <label for="yas">Yaş:</label>
+    <input type="number" id="yas" name="yas" min="1" max="120"><br><br>
+
+    <label for="dogum">Doğum tarixi:</label>
+    <input type="date" id="dogum" name="dogum" required><br><br>
+
+    <label for="reng">Rəng seçimi:</label>
+    <input type="color" id="reng" name="reng"><br><br>
+
+    <label for="fayl">Fayl yüklə:</label>
+    <input type="file" id="fayl" name="fayl" accept=".jpg, .png"><br><br>
+
+    <label for="raziyam">Razıyam?</label>
+    <input type="checkbox" id="raziyam" name="raziyam" required><br><br>
+
+    <label>Cinsiyyət:</label><br>
+    <input type="radio" id="kisi" name="cinsiyyet" value="kisi">
+    <label for="kisi">Kişi</label><br>
+    <input type="radio" id="qadin" name="cinsiyyet" value="qadin">
+    <label for="qadin">Qadın</label><br><br>
+
+    <input type="submit" value="Göndər">
+    </table>
+    
+  </form>
+</body>
+</html>
+ 
