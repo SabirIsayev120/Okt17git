@@ -1,8 +1,6 @@
-function faktorial(n) {
-    let hasil = 1;
-    for (let i = 1; i <= n; i++) {
-        hasil *= i;
-    }
-    return hasil;
+let s = 0
+while (s < 10) {
+    console.log(myname);
+    
 }
-console.log(faktorial(5)); 
+myname(sabir)
