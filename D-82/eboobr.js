@@ -1,8 +1,7 @@
-function boyukHerfliSozler(metin) {
-    let sozler = metin.split(" ");
-    for (let i = 0; i < sozler.length; i++) {
-        sozler[i] = sozler[i][0].toUpperCase() + sozler[i].slice(1);
-    }
-    return sozler.join(" ");
-}
-console.log(boyukHerfliSozler("salam dünya javascript öyrənirəm"));
+const Text = prompt("zəhmət olmasa ədəd daxil edin");
+
+
+const reversedText = Text.split("").reverse().join("");
+
+console.log(`Orijinal mətn: ${Text}`);
+console.log(`Əksinə çevrilmiş mətn: ${reversedText}`); 
