@@ -1,7 +1,14 @@
-const Text = prompt("zəhmət olmasa ədəd daxil edin");
-
-
-const reversedText = Text.split("").reverse().join("");
-
-console.log(`Orijinal mətn: ${Text}`);
-console.log(`Əksinə çevrilmiş mətn: ${reversedText}`); 
+const text = prompt("Zəhmət olmasa , bir cümlə daxil edin.")
+ if (text === null || text === "") {
+    console.log(Mətn daxil edilmədi.);
+    else {
+        const index = text.indexOf(".")
+        if (index !==  -1) {
+            console.log(`ilk nöqtenin yeləşdiyi index: ${index}`);
+            
+        } else {
+            console.log("index tapilmadı");
+            
+        }
+    }
+ }
