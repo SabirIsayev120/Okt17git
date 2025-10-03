@@ -1,11 +1,15 @@
-let arr = ["New Hope", "Empire strikes back", "Return of the Jedi"];
+let meyveler = ["alma", "armud", "banan"];
+meyveler.push("üzüm")
+console.log("push:", meyveler);
+meyveler.unshift("nar")
+console.log("unshift:", meyveler);
+let soilinmiş1 = meyveler.pop()
+console.log("pop", meyveler, "| silinən:", silinmiş1);
+
+let silinmiş2 = meyveler .shift();
+console.log("shift:",meyveler,"| silinən", silinmiş2);
 
 
-for (let i = 0; i < arr.length; i++) {
-
-    let dəfə = i + 4;
-
-    let message = `//Episode ${dəfə}: ${arr[i]}`;
-
-    console.log(message);
-}
+let metn = "32,31,34,36,31";
+let new = metn.split(",").join(";");
+console.log(new);
