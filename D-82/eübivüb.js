@@ -1,20 +1,9 @@
-function enBoyuk(eded1, eded2) {
-  if (eded1 > eded2) {
-    return eded1;
-  } else {
-    return eded2;
+let totalSum = 0;
+
+for (let i = 10; i <= 99; i++) {
+  if (i % 2 !== 0) {
+    totalSum += i;
   }
 }
 
-let cavab = enBoyuk(15, 8);
-console.log(cavab);
-function cutVeYaTek(eded) {
-  if (eded % 2 === 0) {
-    return "Cüt";
-  } else {
-    return "Tək";
-  }
-}
-
-console.log(cutVeYaTek(4));
-console.log(cutVeYaTek(7)); 
+console.log(`Bütün ikirəqəmli tək ədədlərin cəmi: ${totalSum}`);
