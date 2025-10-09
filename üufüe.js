@@ -1,15 +1,18 @@
-let meyveler = ["alma", "armud", "banan"];
-meyveler.push("üzüm")
-console.log("push:", meyveler);
-meyveler.unshift("nar")
-console.log("unshift:", meyveler);
-let soilinmiş1 = meyveler.pop()
-console.log("pop", meyveler, "| silinən:", silinmiş1);
-
-let silinmiş2 = meyveler .shift();
-console.log("shift:",meyveler,"| silinən", silinmiş2);
+let originalArray = [2, 4, 6, 8, 10];
 
 
-let metn = "32,31,34,36,31";
-let new = metn.split(",").join(";");
-console.log(new);
+let newArray = [...originalArray];
+
+
+newArray = neeArray.map(num => num * 2);
+
+
+console.log("Orijinal massiv:", originalArray);
+console.log("Yeni massiv:", newArray);
+
+
+if (JSON.stringify(originalArray) === JSON.stringify([2, 4, 6, 8, 10])) {
+    console.log(" Orijinal massiv dəyişməyib.");
+} else {
+    console.log(" Orijinal massiv dəyişib.");
+}
