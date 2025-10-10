@@ -1,18 +1,20 @@
-let originalArray = [2, 4, 6, 8, 10];
+let meyvələr = ["ALma", "Armud", "Banana", "Nar"]
+meyveler.array.forEach(function (meyve) => {
+    console.log(meyve);
 
 
-let newArray = [...originalArray];
+});
+function printnegatives(numbers) {
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] < 0) {
+            console.log(numbers[i]);
 
+        }
 
-newArray = neeArray.map(num => num * 2);
+    }
 
-
-console.log("Orijinal massiv:", originalArray);
-console.log("Yeni massiv:", newArray);
-
-
-if (JSON.stringify(originalArray) === JSON.stringify([2, 4, 6, 8, 10])) {
-    console.log(" Orijinal massiv dəyişməyib.");
-} else {
-    console.log(" Orijinal massiv dəyişib.");
 }
+
+
+
+printnegatives([2, -3, -2, 4, -1]);
