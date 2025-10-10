@@ -1,20 +1,12 @@
-let meyvələr = ["ALma", "Armud", "Banana", "Nar"]
-meyveler.array.forEach(function (meyve) => {
-    console.log(meyve);
-
-
+const names = ["Aysel","Murad","Ramin","Leyla"];
+names.forEach((name, index )=> {
+    console.log(`${index + 1}. ${name}`);
+    
 });
-function printnegatives(numbers) {
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] < 0) {
-            console.log(numbers[i]);
-
-        }
-
-    }
-
-}
 
 
 
-printnegatives([2, -3, -2, 4, -1]);
+
+const numbers = [1, 4, 7, 10];
+const doubled = numbers.map(number => number * 2);
+console.log(doubled);
