@@ -1,16 +1,26 @@
-function removeDuplicates(arr) {
-  return [...new Set(arr)];
+class Person  {
+  constructor(surname,name,age,gender) {
+    this.surname = surname;
+    this.name=name;
+    this.age= age;
+    this gender = gender;
+
+
+
+
+  }
 }
 
-const numbers = [1, 2, 2, 3, 4, 4, 4, 5];
-console.log(removeDuplicates(numbers));
+let peron1 = new person ("Əliyev","Sabir",15,"kisi")
+let peron2 = new person ("Quliyev","Nihat",18,"kisi")
+let peron3 = new person ("Məmmədov","ELsen",17,"kisi")
+
+console.log(person1);
+console.log(person2);
+console.log(person3);
 
 
 
-function countWords(words) {
-  const map = new Map();
-
-  
 
 
 
